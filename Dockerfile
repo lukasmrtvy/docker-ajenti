@@ -7,5 +7,6 @@ RUN apk add --update  busybox-suid && \
     
 #RUN pip install --force-reinstall 'gevent<1.4,>=1.2'
 #RUN  echo "root:test" | chpasswd
+#RUN apk add -U augeas-dev
 
 ENTRYPOINT ["ajenti-panel","-v","--dev"]
